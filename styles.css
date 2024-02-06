@@ -55,3 +55,19 @@ nav a {
 nav a:hover {
     opacity: 0.5; /*when hovering on all anchors, it lowers the opacit*/
 }
+
+main, section, .nameContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    gap:32px; 
+}
+
+section {
+    gap:24px;
+}
+.nameContainer {
+    gap: 8px;
+}
