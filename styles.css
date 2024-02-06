@@ -62,12 +62,16 @@ main, section, .nameContainer {
 }
 
 main {
-    gap:32px; 
+    gap:32px;  /*this gap call trumps the section gap call of 64px*/
 }
 
 section {
-    gap:24px;
+    gap:64px;  /*GAP for all elements inside of section*/
 }
 .nameContainer {
-    gap: 8px;
+    gap: 32px;  
+}
+
+.imgContainer {
+    
 }
