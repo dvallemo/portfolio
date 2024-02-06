@@ -1,4 +1,5 @@
-:root {
+:root { /*root allows us to store variables of color and size to use later*/
+
     --primary-color: #adf0d4;
     --secondary-color: #1fd8a4;
     --bg-color: #0d1512;
@@ -9,9 +10,48 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'inter', sans-serif;
+    transition-duration: 200ms; /*transition effect everytime you load the page*/
 }
 
 body {
     background: var(--bg-color);
-    color: var(--primary-color);
+    color: var(--primary-color); /*changes text color*/
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 72px; /*gap between body and header*/
+    padding: 14px;
+}
+
+.darkerText {
+    color: var(--secondary-color);
+}
+
+header, main, footer {
+    max-width: 700px;/*width does not expand up to 700px or more*/
+    margin: 0 auto; /*equal distance between margins left and right*/
+    width: 100%; /*makes the width of selectors as large as possible*/
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+}
+
+nav {
+    color: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    gap: 32px; /*gap between the 2 nav items, github and linkedin*/
+    
+}
+
+nav a {
+    cursor: pointer;
+}
+
+nav a:hover {
+    opacity: 0.5; /*when hovering on all anchors, it lowers the opacit*/
 }
